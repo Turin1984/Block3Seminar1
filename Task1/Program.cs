@@ -8,11 +8,18 @@ Console.Write("Введите второе число : ");
 string numberString2 = Console.ReadLine();
 int numberB = int.Parse(numberString2);
 
-if (numberA > numberB)
+if (numberA == numberB)
+{
+    Console.WriteLine ($"Число {numberA} равно числу {numberB} .");
+    
+}
+else if (numberA > numberB)
 {
     Console.WriteLine ($"Число {numberA} является большее, а число {numberB} является меньшее.");
 }
-else
+else 
 {
     Console.WriteLine ($"Число {numberB} является большее, а число {numberA} является меньшее.");
 }
+
+
